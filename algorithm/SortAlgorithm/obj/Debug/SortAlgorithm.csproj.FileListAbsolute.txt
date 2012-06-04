@@ -1,0 +1,5 @@
+H:\MyCode\Algorithm\SortAlgorithm\bin\Debug\SortAlgorithm.dll
+H:\MyCode\Algorithm\SortAlgorithm\bin\Debug\SortAlgorithm.pdb
+H:\MyCode\Algorithm\SortAlgorithm\obj\Debug\ResolveAssemblyReference.cache
+H:\MyCode\Algorithm\SortAlgorithm\obj\Debug\SortAlgorithm.dll
+H:\MyCode\Algorithm\SortAlgorithm\obj\Debug\SortAlgorithm.pdb

@@ -1,0 +1,5 @@
+H:\MyCode\Algorithm\AlgorithmSolution\bin\Debug\AlgorithmSolution.dll
+H:\MyCode\Algorithm\AlgorithmSolution\bin\Debug\AlgorithmSolution.pdb
+H:\MyCode\Algorithm\AlgorithmSolution\obj\Debug\ResolveAssemblyReference.cache
+H:\MyCode\Algorithm\AlgorithmSolution\obj\Debug\AlgorithmSolution.dll
+H:\MyCode\Algorithm\AlgorithmSolution\obj\Debug\AlgorithmSolution.pdb
