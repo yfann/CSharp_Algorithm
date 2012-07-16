@@ -9,3 +9,12 @@ H:\MyCode\Algorithm\Algorithm\bin\Debug\AlgorithmSolution.dll
 H:\MyCode\Algorithm\Algorithm\bin\Debug\AlgorithmSolution.pdb
 F:\MyCode\algorithm\Algorithm\obj\x86\Debug\Algorithm.exe
 F:\MyCode\algorithm\Algorithm\obj\x86\Debug\Algorithm.pdb
+E:\Projects\Algorithm\algorithm\Algorithm\obj\x86\Debug\Algorithm.exe
+E:\Projects\Algorithm\algorithm\Algorithm\obj\x86\Debug\Algorithm.pdb
+E:\Projects\Algorithm\algorithm\Algorithm\bin\Debug\Algorithm.exe
+E:\Projects\Algorithm\algorithm\Algorithm\bin\Debug\Algorithm.pdb
+E:\Projects\Algorithm\algorithm\Algorithm\bin\Debug\AlgorithmSolution.dll
+E:\Projects\Algorithm\algorithm\Algorithm\bin\Debug\SortAlgorithm.dll
+E:\Projects\Algorithm\algorithm\Algorithm\bin\Debug\AlgorithmSolution.pdb
+E:\Projects\Algorithm\algorithm\Algorithm\bin\Debug\SortAlgorithm.pdb
+E:\Projects\Algorithm\algorithm\Algorithm\obj\x86\Debug\ResolveAssemblyReference.cache
