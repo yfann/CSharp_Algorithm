@@ -9,3 +9,5 @@ H:\MyCode\Algorithm\Algorithm\bin\Debug\AlgorithmSolution.dll
 H:\MyCode\Algorithm\Algorithm\bin\Debug\AlgorithmSolution.pdb
 F:\MyCode\algorithm\Algorithm\obj\x86\Debug\Algorithm.exe
 F:\MyCode\algorithm\Algorithm\obj\x86\Debug\Algorithm.pdb
+F:\MyGit\Algorithm\algorithm\Algorithm\obj\x86\Debug\Algorithm.exe
+F:\MyGit\Algorithm\algorithm\Algorithm\obj\x86\Debug\Algorithm.pdb
