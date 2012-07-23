@@ -11,16 +11,16 @@ namespace Algorithm
     {
         static void Main(string[] args)
         {
-            Random ran=new Random();
-            IEnumerable<int> a = Enumerable.Range(1, 100);
-            int len = 10;
-            int[] arr = new int[len];
-            for (int i = 0; i < len; i++)
-            {
-                arr[i] = ran.Next(100);
-            }
+            //Random ran=new Random();
+            //IEnumerable<int> a = Enumerable.Range(1, 100);
+            //int len = 10;
+            //int[] arr = new int[len];
+            //for (int i = 0; i < len; i++)
+            //{
+            //    arr[i] = ran.Next(100);
+            //}
 
-            Console.WriteLine();
+            //Console.WriteLine();
             //PrintArr(arr);
             //BubbleSort.Sort(arr);
             //ShellSort.Sort(arr);
@@ -33,8 +33,16 @@ namespace Algorithm
             //Fibonaccic.Caculate2(100);
 
             //BigNumCaculate.Caculate();
-            HexConvert.Caculate();
-            Console.Read(); 
+            //HexConvert.Caculate();
+
+            MyHashTable hash = new MyHashTable();
+
+            hash.Add("1", 1);
+            hash.Add("2", 3);
+
+            Console.WriteLine("{0} {1}", hash["1"], hash["2"]);
+
+            Console.Read();
         }
 
 
@@ -45,7 +53,7 @@ namespace Algorithm
             {
                 temp += arr[i] + " ";
             }
-            Console.WriteLine(temp); 
+            Console.WriteLine(temp);
         }
     }
 }

@@ -3,3 +3,13 @@ H:\MyCode\Algorithm\SortAlgorithm\bin\Debug\SortAlgorithm.pdb
 H:\MyCode\Algorithm\SortAlgorithm\obj\Debug\ResolveAssemblyReference.cache
 H:\MyCode\Algorithm\SortAlgorithm\obj\Debug\SortAlgorithm.dll
 H:\MyCode\Algorithm\SortAlgorithm\obj\Debug\SortAlgorithm.pdb
+E:\Projects\Algorithm\algorithm\SortAlgorithm\bin\Debug\SortAlgorithm.dll
+E:\Projects\Algorithm\algorithm\SortAlgorithm\bin\Debug\SortAlgorithm.pdb
+E:\Projects\Algorithm\algorithm\SortAlgorithm\obj\Debug\ResolveAssemblyReference.cache
+E:\Projects\Algorithm\algorithm\SortAlgorithm\obj\Debug\SortAlgorithm.dll
+E:\Projects\Algorithm\algorithm\SortAlgorithm\obj\Debug\SortAlgorithm.pdb
+F:\MyGit\Algorithm\algorithm\SortAlgorithm\bin\Debug\SortAlgorithm.dll
+F:\MyGit\Algorithm\algorithm\SortAlgorithm\bin\Debug\SortAlgorithm.pdb
+F:\MyGit\Algorithm\algorithm\SortAlgorithm\obj\Debug\ResolveAssemblyReference.cache
+F:\MyGit\Algorithm\algorithm\SortAlgorithm\obj\Debug\SortAlgorithm.dll
+F:\MyGit\Algorithm\algorithm\SortAlgorithm\obj\Debug\SortAlgorithm.pdb

@@ -3,3 +3,13 @@ H:\MyCode\Algorithm\AlgorithmSolution\bin\Debug\AlgorithmSolution.pdb
 H:\MyCode\Algorithm\AlgorithmSolution\obj\Debug\ResolveAssemblyReference.cache
 H:\MyCode\Algorithm\AlgorithmSolution\obj\Debug\AlgorithmSolution.dll
 H:\MyCode\Algorithm\AlgorithmSolution\obj\Debug\AlgorithmSolution.pdb
+E:\Projects\Algorithm\algorithm\AlgorithmSolution\bin\Debug\AlgorithmSolution.dll
+E:\Projects\Algorithm\algorithm\AlgorithmSolution\bin\Debug\AlgorithmSolution.pdb
+E:\Projects\Algorithm\algorithm\AlgorithmSolution\obj\Debug\ResolveAssemblyReference.cache
+E:\Projects\Algorithm\algorithm\AlgorithmSolution\obj\Debug\AlgorithmSolution.dll
+E:\Projects\Algorithm\algorithm\AlgorithmSolution\obj\Debug\AlgorithmSolution.pdb
+F:\MyGit\Algorithm\algorithm\AlgorithmSolution\bin\Debug\AlgorithmSolution.dll
+F:\MyGit\Algorithm\algorithm\AlgorithmSolution\bin\Debug\AlgorithmSolution.pdb
+F:\MyGit\Algorithm\algorithm\AlgorithmSolution\obj\Debug\ResolveAssemblyReference.cache
+F:\MyGit\Algorithm\algorithm\AlgorithmSolution\obj\Debug\AlgorithmSolution.dll
+F:\MyGit\Algorithm\algorithm\AlgorithmSolution\obj\Debug\AlgorithmSolution.pdb
