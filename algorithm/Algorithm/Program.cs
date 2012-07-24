@@ -2,14 +2,15 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using SortAlgorithm;
 using AlgorithmSolution;
+using SortAlgorithm;
+using Structure;
 
 namespace Algorithm
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             //Random ran=new Random();
             //IEnumerable<int> a = Enumerable.Range(1, 100);
@@ -35,18 +36,83 @@ namespace Algorithm
             //BigNumCaculate.Caculate();
             //HexConvert.Caculate();
 
-            MyHashTable hash = new MyHashTable();
+            //MyHashTable hash = new MyHashTable();
 
-            hash.Add("1", 1);
-            hash.Add("2", 3);
+            //hash.Add("1", 1);
+            //hash.Add("2", 3);
 
-            Console.WriteLine("{0} {1}", hash["1"], hash["2"]);
+            //Console.WriteLine("{0} {1}", hash["1"], hash["2"]);
+
+            OrderTreeTest();
 
             Console.Read();
         }
 
+        private static void OrderTreeTest()
+        {
+            Random ran = new Random();
+            OrderTree<int, int> tree = new OrderTree<int, int>();
+            List<int> list = new List<int>();
+            for (int i = 0; i < 12; i++)
+            {
+                int temp = ran.Next(1, 100);
+                if (!list.Contains(temp))
+                {
+                    list.Add(temp);
+                    tree.Add(temp, temp);
+                }
+            }
 
-        static void PrintArr(int[] arr)
+            Console.WriteLine("List length:{0}", list.Count);
+            Console.WriteLine("List:");
+            foreach (var a in list)
+            {
+                Console.Write("{0} ", a);
+            }
+            Console.WriteLine();
+            Console.WriteLine("Sorted List:");
+            list.Sort();
+            foreach (var a in list)
+            {
+                Console.Write("{0} ", a);
+            }
+            Console.WriteLine();
+            Console.WriteLine("OrderTree:");
+            Console.WriteLine(tree.PrintList());
+
+            while (true)
+            {
+                Console.WriteLine("input a key");
+                ConsoleKeyInfo key = Console.ReadKey();
+
+                switch (key.Key)
+                {
+                    case ConsoleKey.S:
+                        Console.WriteLine("set min num:");
+                        int min = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("set max num:");
+                        int max = Convert.ToInt32(Console.ReadLine());
+                        HashSet<int> hs = tree.SearchRange(min, max);
+                        IEnumerable<int> ie = hs.ToList();
+                        foreach (var a in ie)
+                        {
+                            Console.Write("{0} ", a);
+                        }
+                        Console.WriteLine();
+                        break;
+                    case ConsoleKey.R:
+                        Console.WriteLine("set a remove num:");
+                        int rm = Convert.ToInt32(Console.ReadLine());
+                        tree.Remove(rm, rm);
+                        Console.WriteLine(tree.PrintList());
+                        break;
+                    default:
+                        break;
+                }
+            }
+        }
+
+        private static void PrintArr(int[] arr)
         {
             string temp = "";
             for (int i = 0; i < arr.Length; i++)

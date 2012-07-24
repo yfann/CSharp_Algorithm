@@ -9,3 +9,14 @@ F:\MyGit\Algorithm\algorithm\Algorithm\bin\Debug\Structure.pdb
 F:\MyGit\Algorithm\algorithm\Algorithm\obj\x86\Debug\ResolveAssemblyReference.cache
 F:\MyGit\Algorithm\algorithm\Algorithm\obj\x86\Debug\Algorithm.exe
 F:\MyGit\Algorithm\algorithm\Algorithm\obj\x86\Debug\Algorithm.pdb
+E:\Projects\Algorithm\algorithm\Algorithm\obj\x86\Debug\Algorithm.exe
+E:\Projects\Algorithm\algorithm\Algorithm\obj\x86\Debug\Algorithm.pdb
+E:\Projects\Algorithm\algorithm\Algorithm\bin\Debug\Algorithm.exe
+E:\Projects\Algorithm\algorithm\Algorithm\bin\Debug\Algorithm.pdb
+E:\Projects\Algorithm\algorithm\Algorithm\bin\Debug\AlgorithmSolution.dll
+E:\Projects\Algorithm\algorithm\Algorithm\bin\Debug\SortAlgorithm.dll
+E:\Projects\Algorithm\algorithm\Algorithm\bin\Debug\Structure.dll
+E:\Projects\Algorithm\algorithm\Algorithm\bin\Debug\AlgorithmSolution.pdb
+E:\Projects\Algorithm\algorithm\Algorithm\bin\Debug\SortAlgorithm.pdb
+E:\Projects\Algorithm\algorithm\Algorithm\bin\Debug\Structure.pdb
+E:\Projects\Algorithm\algorithm\Algorithm\obj\x86\Debug\ResolveAssemblyReference.cache

@@ -5,32 +5,78 @@ using System.Text;
 
 namespace Structure
 {
-    public class OrderTree<K,V> where K:IComparable
+    public class OrderTree<K, V> where K : IComparable
     {
         public BinaryNode<K, V> Root;
 
         public void Add(K key, V value)
         {
-            Root = Add(key,value,Root);
+            Root = Add(key, value, Root);
         }
 
         public BinaryNode<K, V> Add(K key, V value, BinaryNode<K, V> tree)
         {
             if (tree == null)
-                tree = new BinaryNode<K, V>(key,value,null,null);
+                tree = new BinaryNode<K, V>(key, value, null, null);
             if (key.CompareTo(tree.Key) < 0)
-                tree.Left = Add(key,value,tree.Left);
+                tree.Left = Add(key, value, tree.Left);
             if (key.CompareTo(tree.Key) > 0)
-                tree.Right = Add(key,value,tree.Right);
+                tree.Right = Add(key, value, tree.Right);
             if (key.CompareTo(tree.Key) == 0)
                 tree.Attach.Add(value);
             return tree;
         }
 
+        public BinaryNode<K, V> Remove(K key, V value)
+        {
+            return Remove(key, value, Root, true);
+        }
+
+        public BinaryNode<K, V> Remove(K key, V value, BinaryNode<K, V> tree, bool isLazyRemove)
+        {
+            if (tree == null)
+                return null;
+            if (key.CompareTo(tree.Key) < 0)
+                tree.Left = Remove(key, value, tree.Left, isLazyRemove);
+            if (key.CompareTo(tree.Key) > 0)
+                tree.Right = Remove(key, value, tree.Right, isLazyRemove);
+            if (key.CompareTo(tree.Key) == 0)
+            {
+                if (tree.Attach.Count > 1 && isLazyRemove)
+                {
+                    tree.Attach.Remove(value);
+                }
+                else
+                {
+                    if (tree.Left != null && tree.Right != null)
+                    {
+                        BinaryNode<K, V> node = FindMin(tree.Right);
+                        tree.Key = node.Key;
+                        tree.Attach = node.Attach;
+                        tree.Right = Remove(tree.Key, value, tree.Right, false);
+                    }
+                    else
+                    {
+                        tree = tree.Left == null ? tree.Right : tree.Left;
+                    }
+                }
+            }
+            return tree;
+        }
+
+        public BinaryNode<K, V> FindMin(BinaryNode<K, V> tree)
+        {
+            if (tree == null)
+                return null;
+            if (tree.Left == null)
+                return tree;
+            return FindMin(tree.Left);
+        }
+
         public HashSet<V> SearchRange(K min, K max)
         {
             HashSet<V> hashSet = new HashSet<V>();
-            hashSet = SearchRange(min,max,hashSet,Root);
+            hashSet = SearchRange(min, max, hashSet, Root);
             return hashSet;
         }
 
@@ -48,8 +94,26 @@ namespace Structure
                 }
             }
             if (min.CompareTo(tree.Key) > 0 || max.CompareTo(tree.Key) > 0)
-                SearchRange(min,max,hashSet,tree.Right);
+                SearchRange(min, max, hashSet, tree.Right);
             return hashSet;
+        }
+
+        public void MiddleOrder(BinaryNode<K, V> node, StringBuilder sb)
+        {
+            if (node == null)
+                return;
+            if (node.Left != null)
+                MiddleOrder(node.Left, sb);
+            sb.Append(node.Key + " ");
+            if (node.Right != null)
+                MiddleOrder(node.Right, sb);
+        }
+
+        public string PrintList()
+        {
+            StringBuilder sb = new StringBuilder();
+            MiddleOrder(Root, sb);
+            return sb.ToString();
         }
     }
 
@@ -59,7 +123,9 @@ namespace Structure
         public HashSet<V> Attach = new HashSet<V>();
         public BinaryNode<K, V> Left;
         public BinaryNode<K, V> Right;
+
         public BinaryNode() { }
+
         public BinaryNode(K key, V value, BinaryNode<K, V> left, BinaryNode<K, V> right)
         {
             Key = key;
