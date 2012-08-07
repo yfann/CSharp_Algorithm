@@ -50,10 +50,10 @@ namespace Structure
                 {
                     if (tree.Left != null && tree.Right != null)
                     {
-                        BinaryNode<K, V> node = FindMin(tree.Right);
+                        BinaryNode<K, V> node = FindMin(tree.Right);//右侧子树找最小节点
                         tree.Key = node.Key;
                         tree.Attach = node.Attach;
-                        tree.Right = Remove(tree.Key, value, tree.Right, false);
+                        tree.Right = Remove(tree.Key, value, tree.Right, false);//删除右侧子树最小节点，不做lazy删除value不起作用
                     }
                     else
                     {
@@ -85,7 +85,7 @@ namespace Structure
             if (tree == null)
                 return hashSet;
             if (min.CompareTo(tree.Key) < 0)
-                SearchRange(min, max, hashSet, tree.Left);
+                SearchRange(min, max, hashSet, tree.Left);//向左遍历
             if (min.CompareTo(tree.Key) <= 0 && max.CompareTo(tree.Key) >= 0)
             {
                 foreach (var item in tree.Attach)
@@ -93,8 +93,8 @@ namespace Structure
                     hashSet.Add(item);
                 }
             }
-            if (min.CompareTo(tree.Key) > 0 || max.CompareTo(tree.Key) > 0)
-                SearchRange(min, max, hashSet, tree.Right);
+            if (min.CompareTo(tree.Key) > 0 || max.CompareTo(tree.Key) > 0) //当min在右侧子树时
+                SearchRange(min, max, hashSet, tree.Right);// 向右遍历
             return hashSet;
         }
 

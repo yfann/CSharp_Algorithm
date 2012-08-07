@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AVLTree.cs" />
     <Compile Include="MyHashTable.cs" />
     <Compile Include="OrderTree.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -43,8 +43,8 @@ namespace Algorithm
 
             //Console.WriteLine("{0} {1}", hash["1"], hash["2"]);
 
-            OrderTreeTest();
-
+            //OrderTreeTest();
+            AVLTreeTest();
             Console.Read();
         }
 
@@ -109,6 +109,36 @@ namespace Algorithm
                     default:
                         break;
                 }
+            }
+        }
+
+        private static void AVLTreeTest()
+        {
+            AVLTree<int, int> avl = new AVLTree<int, int>();
+
+            for (int i = 1; i < 11; i++)
+            {
+                avl.Add(i, i);
+            }
+            Console.WriteLine("Root:{0}", avl.Root.Key.ToString());
+            Console.WriteLine("Height:{0}", avl.Root.Height);
+            Console.WriteLine("Inorder:{0}", avl.Print());
+            Queue<AVLNode<int, int>> que = new Queue<AVLNode<int, int>>();
+
+            ViewAVLLayer(avl.Root, que);
+        }
+
+        private static void ViewAVLLayer(AVLNode<int, int> node, Queue<AVLNode<int, int>> que)
+        {
+            if (node.Left != null)
+                que.Enqueue(node.Left);
+            if (node.Right != null)
+                que.Enqueue(node.Right);
+            Console.Write("{0}   ", node.Key);
+
+            if (que.Count > 0)
+            {
+                ViewAVLLayer(que.Dequeue(), que);
             }
         }
 
